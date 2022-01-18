@@ -1,5 +1,8 @@
 import './App.css';
 import React, { useState, useEffect, useRef } from 'react'
+import { polyfill } from "seamless-scroll-polyfill";
+
+polyfill();
 
 function App() {
   const [fixedClass, setFixedClass] = useState('link-wrap');
