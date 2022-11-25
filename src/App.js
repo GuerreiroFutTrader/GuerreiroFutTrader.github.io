@@ -56,18 +56,18 @@ function App() {
     <div className="App">
       <section className="home" ref={homeRef}>
         <div className="canvas"></div>
-        <div className="text">Olá, me chamo
-          <span className="highlight"> Kelvin Pichinini</span>.
+        <div className="text">Olá, eu sou o 
+          <span className="highlight"> GUERREIRO</span>.
           <br />
-          Desenvolvedor Web FullStack. 
+          FUT Trader. Top 1 em transfer profit mundial. 
         </div>
         <button className="aboutRef button" onClick={ handleClick }>Conhecer mais</button>
       <nav>
         <div className={ fixedClass }>
           <div className= {`homeRef link-btn ${currentView.includes('home') ? 'active' : ''}`} onClick={ handleClick }>home</div>
           <div className={`aboutRef link-btn ${currentView.includes('about') ? 'active' : ''}`} onClick={ handleClick }>sobre</div>
-          <div className={`projectRef link-btn ${currentView.includes('project') ? 'active' : ''}`} onClick={ handleClick }>projetos</div>
-          <div className={`contactRef link-btn ${currentView.includes('contact') ? 'active' : ''}`} onClick={ handleClick }>contato</div>
+          <div className={`projectRef link-btn ${currentView.includes('project') ? 'active' : ''}`} onClick={ handleClick }>resultados</div>
+          <div className={`contactRef link-btn ${currentView.includes('contact') ? 'active' : ''}`} onClick={ handleClick }>planos</div>
         </div>
       </nav>
       </section>
@@ -76,11 +76,11 @@ function App() {
         <div className="bar"></div>
       </section>
       <section className="content" ref={projectRef}>
-        <div className="title"> PROJETOS </div>
+        <div className="title"> RESULTADOS </div>
         <div className="bar"></div>
       </section>
       <section className="content" ref={contactRef}>
-        <div className="title"> CONTATO </div>
+        <div className="title"> PLANOS </div>
         <div className="bar"></div>
       </section>
     </div>
