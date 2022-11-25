@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content:space-around;
   font-size: calc(10px + 3vmin);
   color: white;
 }
@@ -90,6 +90,7 @@
 }
 
 .link-btn{
+  cursor: pointer;
   margin-left: 5%;
   color:#6B6E70;
   font-size: calc(8px + 2vmin);
@@ -102,6 +103,12 @@
   color: white;
   z-index: 1;
   font-size: calc(12px + 3vmin);
+}
+
+.cover-logo {
+  z-index: 1;
+  width: 200px;
+  height: 200px;  
 }
 
 .button {
@@ -131,11 +138,48 @@
   color: #86C323
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.plan-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plan-card {
+  
+  
+  margin: 10px;
+}
+
+.plan-title-1 {
+  font-size: xx-large;
+  border-top: 1px solid #86C323;
+  border-radius: 5px;
+  background-color: #86C323;
+  padding: 8px;
+  width: 300px;
+}
+
+.plan-title-2 {
+  font-size: xx-large;
+  background-color: #1a1d1f;
+  border: 1px solid #1a1d1f;
+  border-radius: 5px;
+  color:#86C323;
+  padding: 8px;
+  margin-bottom: 5px;
+  width: 300px;
+}
+
+.plan-title-3 {
+  font-size: xx-large;
+  border: 1px solid #86C323;
+  border-radius: 5px;
+  background-color: #86C323;
+  padding: 8px;
+  margin-bottom: 5px;
+  width: 300px;
+}
+
+.plan-description-1 {
+
 }

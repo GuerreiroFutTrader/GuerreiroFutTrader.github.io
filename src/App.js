@@ -1,6 +1,8 @@
 import './App.css';
+import logo from "./assets/logo.png"
 import React, { useState, useEffect, useRef } from 'react'
 import { polyfill } from "seamless-scroll-polyfill";
+import PlanCards from './components/PlanCards';
 
 polyfill();
 
@@ -9,8 +11,10 @@ function App() {
   const [currentView, setCurrentView] = useState('home');
   const homeRef = useRef();
   const aboutRef = useRef();
-  const projectRef = useRef();
-  const contactRef = useRef();
+  const resultsRef = useRef();
+  const FAQRef = useRef();
+  const plansRef = useRef();
+
 
 
   useEffect(() => {
@@ -29,9 +33,11 @@ function App() {
       } else if (windowHeight >= maxHeight && windowHeight < 2*maxHeight){
         setCurrentView('aboutRef');
       } else if (windowHeight >= 2* maxHeight && windowHeight < 3*maxHeight){
-        setCurrentView('projectsRef')
+        setCurrentView('resultsRef')
       }else if (windowHeight >= 3* maxHeight && windowHeight < 4*maxHeight){
-        setCurrentView('contactRef')
+        setCurrentView('plansRef')
+      }else if (windowHeight >= 4* maxHeight && windowHeight < 5*maxHeight){
+        setCurrentView('FAQRef')
       }
       
     }
@@ -44,11 +50,14 @@ function App() {
     if(ref.includes('homeRef')) {
       homeRef.current.scrollIntoView({ behavior: 'smooth' });
     }
-    if(ref.includes('projectRef')) {
-      projectRef.current.scrollIntoView({ behavior: 'smooth' });
+    if(ref.includes('resultsRef')) {
+      resultsRef.current.scrollIntoView({ behavior: 'smooth' });
     }
-    if(ref.includes('contactRef')) {
-      contactRef.current.scrollIntoView({ behavior: 'smooth' });
+    if(ref.includes('plansRef')) {
+      plansRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+    if(ref.includes('FAQRef')) {
+      FAQRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   }
 
@@ -56,18 +65,20 @@ function App() {
     <div className="App">
       <section className="home" ref={homeRef}>
         <div className="canvas"></div>
-        <div className="text">Olá, eu sou o 
+        <img className="cover-logo"src={ logo } alt="" />
+        <div className="text">Bem-vindo! eu sou o 
           <span className="highlight"> GUERREIRO</span>.
           <br />
-          FUT Trader. Top 1 em transfer profit mundial. 
+          Trader top 15 do mundo e produtor de conteúdo sobre o FIFA Ultimate Team. 
         </div>
         <button className="aboutRef button" onClick={ handleClick }>Conhecer mais</button>
       <nav>
         <div className={ fixedClass }>
           <div className= {`homeRef link-btn ${currentView.includes('home') ? 'active' : ''}`} onClick={ handleClick }>home</div>
           <div className={`aboutRef link-btn ${currentView.includes('about') ? 'active' : ''}`} onClick={ handleClick }>sobre</div>
-          <div className={`projectRef link-btn ${currentView.includes('project') ? 'active' : ''}`} onClick={ handleClick }>resultados</div>
-          <div className={`contactRef link-btn ${currentView.includes('contact') ? 'active' : ''}`} onClick={ handleClick }>planos</div>
+          <div className={`resultsRef link-btn ${currentView.includes('results') ? 'active' : ''}`} onClick={ handleClick }>resultados</div>
+          <div className={`plansRef link-btn ${currentView.includes('plans') ? 'active' : ''}`} onClick={ handleClick }>planos</div>
+          <div className={`FAQRef link-btn ${currentView.includes('FAQ') ? 'active' : ''}`} onClick={ handleClick }>dúvidas</div>
         </div>
       </nav>
       </section>
@@ -75,12 +86,17 @@ function App() {
         <div className="title"> SOBRE </div>
         <div className="bar"></div>
       </section>
-      <section className="content" ref={projectRef}>
+      <section className="content" ref={resultsRef}>
         <div className="title"> RESULTADOS </div>
         <div className="bar"></div>
       </section>
-      <section className="content" ref={contactRef}>
+      <section className="content" ref={plansRef}>
         <div className="title"> PLANOS </div>
+        <div className="bar"></div>
+        <PlanCards />
+      </section>
+      <section className="content" ref={FAQRef}>
+        <div className="title"> DÚVIDAS FREQUENTES </div>
         <div className="bar"></div>
       </section>
     </div>
