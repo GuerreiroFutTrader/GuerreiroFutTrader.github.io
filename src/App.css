@@ -43,7 +43,7 @@
   width: 70px;
   height: 3px;
   background-color: #474b4f;
-  margin: 1px 0px 100px 0px;
+  margin: 1px 0px 50px 0px;
 
 
 }
@@ -142,44 +142,119 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .plan-card {
-  
-  
   margin: 10px;
 }
 
 .plan-title-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: xx-large;
-  border-top: 1px solid #86C323;
-  border-radius: 5px;
   background-color: #86C323;
   padding: 8px;
   width: 300px;
+  height: 70px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .plan-title-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: xx-large;
   background-color: #1a1d1f;
-  border: 1px solid #1a1d1f;
-  border-radius: 5px;
   color:#86C323;
   padding: 8px;
-  margin-bottom: 5px;
   width: 300px;
+  height: 70px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .plan-title-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: xx-large;
-  border: 1px solid #86C323;
-  border-radius: 5px;
   background-color: #86C323;
   padding: 8px;
-  margin-bottom: 5px;
   width: 300px;
+  height: 70px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .plan-description-1 {
+  padding-bottom:  8px;
+  background-color: #86C323;
+  margin-bottom: 8px;
+  height: 30px;
 
+}
+
+.plan-description-2 {
+  padding-bottom:  8px;
+  background-color: #1a1d1f;
+  color:#86C323;
+  margin-bottom: 8px;
+  height: 30px;
+
+}
+
+.plan-description-3 {
+  padding-bottom:  8px;
+  background-color: #86C323;
+  margin-bottom: 8px;
+  height: 30px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: small;
+}
+
+.price {
+  font-size: xx-large;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.subtitle { 
+  font-size:x-small;
+}
+
+.pay-btn {
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #86C323;
+  transition: 0.4s;
+}
+
+.pay-btn:hover {
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #86C323;
+  color: white;
+  background-color: #86C323;
+  border: solid #86C323 1px;
+  transition-timing-function: ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }

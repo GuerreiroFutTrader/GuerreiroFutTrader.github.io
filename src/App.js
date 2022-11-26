@@ -26,7 +26,6 @@ function App() {
     if (window !== undefined) {
       const maxHeight = window.innerHeight;
       let windowHeight = window.scrollY;
-      // window height changed for the demo
       windowHeight >= maxHeight ? setFixedClass('link-wrap-fixed') : setFixedClass('link-wrap');
       if(windowHeight < maxHeight) {
         setCurrentView('homeRef');
@@ -74,7 +73,6 @@ function App() {
         <button className="aboutRef button" onClick={ handleClick }>Conhecer mais</button>
       <nav>
         <div className={ fixedClass }>
-          <div className= {`homeRef link-btn ${currentView.includes('home') ? 'active' : ''}`} onClick={ handleClick }>home</div>
           <div className={`aboutRef link-btn ${currentView.includes('about') ? 'active' : ''}`} onClick={ handleClick }>sobre</div>
           <div className={`resultsRef link-btn ${currentView.includes('results') ? 'active' : ''}`} onClick={ handleClick }>resultados</div>
           <div className={`plansRef link-btn ${currentView.includes('plans') ? 'active' : ''}`} onClick={ handleClick }>planos</div>
