@@ -73,10 +73,10 @@ function App() {
         <button className="aboutRef button" onClick={ handleClick }>Conhecer mais</button>
       <nav>
         <div className={ fixedClass }>
-          <div className={`aboutRef link-btn ${currentView.includes('about') ? 'active' : ''}`} onClick={ handleClick }>sobre</div>
-          <div className={`resultsRef link-btn ${currentView.includes('results') ? 'active' : ''}`} onClick={ handleClick }>resultados</div>
-          <div className={`plansRef link-btn ${currentView.includes('plans') ? 'active' : ''}`} onClick={ handleClick }>planos</div>
-          <div className={`FAQRef link-btn ${currentView.includes('FAQ') ? 'active' : ''}`} onClick={ handleClick }>dúvidas</div>
+          <button className={`aboutRef link-btn ${currentView.includes('about') ? 'active' : ''}`} onClick={ handleClick }>SOBRE</button>
+          <button className={`resultsRef link-btn ${currentView.includes('results') ? 'active' : ''}`} onClick={ handleClick }>RESULTADOS</button>
+          <button className={`plansRef link-btn ${currentView.includes('plans') ? 'active' : ''}`} onClick={ handleClick }>PLANOS</button>
+          <button className={`FAQRef link-btn ${currentView.includes('FAQ') ? 'active' : ''}`} onClick={ handleClick }>DÚVIDAS</button>
         </div>
       </nav>
       </section>
@@ -88,7 +88,7 @@ function App() {
         <div className="title"> RESULTADOS </div>
         <div className="bar"></div>
       </section>
-      <section className="content" ref={plansRef}>
+      <section className="content-plans" ref={plansRef}>
         <div className="title"> PLANOS </div>
         <div className="bar"></div>
         <PlanCards />
