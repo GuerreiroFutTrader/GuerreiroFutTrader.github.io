@@ -6,7 +6,7 @@ export default function PlanCards () {
     return (
       <div className="plan-cards">
         <div className="promo plan-card">
-          <h3 className="plan-title-2">BLACK FRIDAY - TRIMESTRAL</h3>
+          <h3 className="plan-title-2"><box-icon rotate="270"color="#86C323" type='solid' name='discount'></box-icon>BLACK FRIDAY  TRIMESTRAL <box-icon rotate="270"color="#86C323" type='solid' name='discount'></box-icon></h3>
           <div className="plan-description-2"> Três meses pelo preço de dois </div>
           <div className="price-container">
             <span className="old-price">
@@ -23,11 +23,14 @@ export default function PlanCards () {
           </a>
           <a rel="noreferrer"target="_blank" href="https://www.asaas.com/c/921761160336">
             <div className="pay-btn">Pagar com cartão </div>
-          </a>     
+          </a>
+          <a rel="noreferrer"target="_blank" href="https://wa.me/5516997254497">
+            <div className="subtitle wpp-btn"><box-icon name='whatsapp' type='logo' ></box-icon>Envie comprovante pelo Whatsapp</div>      
+          </a>
         </div>
 
         <div className="promo plan-card">
-          <h3 className="plan-title-2">BLACK FRIDAY - SEMESTRAL</h3>
+          <h3 className="plan-title-2"><box-icon rotate="270"color="#86C323" type='solid' name='discount'></box-icon> BLACK FRIDAY SEMESTRAL <box-icon rotate="270"color="#86C323" type='solid' name='discount'></box-icon></h3>
           <div className="plan-description-2">SEIS meses pelo preço de quatro</div>
           <div className="price-container">
           <span className="old-price">
@@ -44,12 +47,15 @@ export default function PlanCards () {
           </a>
           <a rel="noreferrer"target="_blank" href="https://www.asaas.com/c/606186180544">
             <div className="pay-btn">Pagar com cartão </div>
-          </a>    
+          </a> 
+          <a rel="noreferrer"target="_blank" href="https://wa.me/5516997254497">
+            <div className="subtitle wpp-btn"><box-icon name='whatsapp' type='logo' ></box-icon>Envie comprovante pelo Whatsapp</div>      
+          </a>
         </div>
 
         <div className="promo plan-card">
-          <h3 className="plan-title-2">BLACK FRIDAY - SEASON PASS</h3>
-          <div className="plan-description-2">Acesso por toda temporada do fifa 22</div>
+          <h3 className="plan-title-2"><box-icon rotate="270"color="#86C323" type='solid' name='discount'></box-icon> BLACK FRIDAY SEASON PASS <box-icon rotate="270"color="#86C323" type='solid' name='discount'></box-icon></h3>
+          <div className="plan-description-2">Acesso por toda temporada do fifa 23</div>
           <div className="price-container">
             <span className="old-price">
                 R$300,00
@@ -65,7 +71,10 @@ export default function PlanCards () {
           </a>
           <a rel="noreferrer"target="_blank" href="https://www.asaas.com/c/563177895114">
             <div className="pay-btn">Pagar com cartão </div>
-          </a>      
+          </a>
+          <a rel="noreferrer"target="_blank" href="https://wa.me/5516997254497">
+            <div className="subtitle wpp-btn"><box-icon name='whatsapp' type='logo' ></box-icon>Envie comprovante pelo Whatsapp</div>      
+          </a>
         </div>
 
         <div className="monthly plan-card">
@@ -81,7 +90,10 @@ export default function PlanCards () {
           </div>
           <a rel="noreferrer"target="_blank" href="https://www.asaas.com/c/250597094434">
             <div className="pay-btn">Assinar</div>
-          </a>     
+          </a>
+          <a rel="noreferrer"target="_blank" href="https://wa.me/5516997254497">
+            <div className="subtitle wpp-btn"><box-icon name='whatsapp' type='logo' ></box-icon>Envie comprovante pelo Whatsapp</div>      
+          </a>
         </div>
       </div>
     )
