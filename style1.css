@@ -1,0 +1,88 @@
+body{
+	align-items: center;
+	margin: 0;
+	font-family: sans-serif;
+	font-style:normal;
+	background-color:#f4f1de;
+	word-spacing: -2px;
+    letter-spacing: 1px;
+    font-size: 130%;
+	color: #3d405b;
+	margin: -1;
+	padding: -1;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	text-align: left;
+	background-color: #3d405b;
+	color: #e07a5f ;
+	margin: 0px 0px 30px 0px;
+	padding: 10px 30px;
+	z-index: 1;
+	width: 100%;
+	font-weight: 1000;
+	font-family: monospace;
+	margin-top: -1;
+}
+#hello{
+	margin: 50px;
+	text-align: center;
+}
+
+#galeria{
+	margin-left: 25%;
+	margin-right: 25%;
+	display: inline-block;
+	font-size: 0;
+	
+	
+}
+.fotos {
+	border-radius: 20px;
+	width: 50%;
+}
+figcaption{
+	font-size: 12px;
+}
+#quemSou{
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.nacionalidade{
+	font-weight: 600;
+}
+
+#habilidades{
+	width: 50%;
+	margin-left: 22%;
+	margin-right: 25%;
+}
+
+
+
+.habilidade1{
+	font-size: 24px;
+}
+.habilidade2{
+	font-size: 19px;
+}
+#linksUteis{
+	text-align: center;
+	
+	
+}
+#linksUteis a{
+	display: inline-block;	
+	border-radius: 5px;
+	background-color: #f2cc8f;
+	color: #e07a5f;
+	padding: 7px;
+	margin: 3px;
+	
+}
+
+
+
